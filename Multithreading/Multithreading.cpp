@@ -40,7 +40,6 @@ void mutex_action(int tid) {
 	mtx.lock();
 	append_message.append("Thread #").append(to_string(tid)).append(" message appended successfully.\n");
 	mtx.unlock();
-
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
