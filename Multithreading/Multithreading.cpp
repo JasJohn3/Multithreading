@@ -35,7 +35,7 @@ int main()
 	cout << append_message;
     system("pause"); 
 }
-
+//Create a Mutex Action for each thread that locks and unlocks each thread accessing the string.
 void mutex_action(int tid) {
 	mtx.lock();
 	append_message.append("Thread #").append(to_string(tid)).append(" message appended successfully.\n");
